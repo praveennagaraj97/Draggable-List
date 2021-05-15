@@ -1,0 +1,14 @@
+.list-item {
+  background-color: rgba(255, 228, 196, 0.74);
+  padding: 15px 10px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  cursor: move;
+}
+
+.dragger {
+  height: 15px;
+  margin-right: 10px;
+}

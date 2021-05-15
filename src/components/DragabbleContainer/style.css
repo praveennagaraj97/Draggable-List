@@ -1,0 +1,10 @@
+.drag-container {
+  background-color: rgba(188, 142, 235, 0.452);
+  height: 400px;
+  padding: 10px 8px;
+  border-radius: 7px;
+}
+
+.dragging {
+  opacity: 0.4;
+}
