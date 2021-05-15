@@ -5,10 +5,6 @@ import './style.css';
 import { list } from '../../data/dummy-list';
 import { Component, DragEvent } from 'react';
 
-/**
- * @implementation using drag event
- * Step 1 - On Drag start apply a classname identifier to current target
- */
 export default class DraggableContainer extends Component<
   {},
   {
@@ -62,6 +58,7 @@ export default class DraggableContainer extends Component<
       items: listState,
     });
     window.navigator.vibrate(200);
+    this.setState({ startPos: e.clientY });
   };
 
   componentDidMount() {
