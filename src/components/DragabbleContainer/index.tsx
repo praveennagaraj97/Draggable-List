@@ -35,6 +35,7 @@ export default class DraggableContainer extends Component<
     e: DragEvent<HTMLDivElement>,
     item: { id: number; name: string }
   ) => {
+    e.preventDefault();
     const listState = [...this.state.items];
     if (e.clientY < this.state.startPos!) {
       listState[
